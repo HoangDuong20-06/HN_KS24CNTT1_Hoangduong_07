@@ -37,12 +37,12 @@ public class WarehouseManagement {
                     } while (true);
                     break;
                 case 3:
-                    System.out.print("Nhập ID cần update: ");
-                    String updateId = sc.nextLine();
-                    Product newData = new Product();
-                    System.out.println("Nhập thông tin mới:");
-                    newData.inputData(sc);
-                    business.update(updateId, newData);
+//                    System.out.print("Nhập ID cần update: ");
+//                    String updateId = sc.nextLine();
+//                    Product newData = new Product();
+//                    System.out.println("Nhập thông tin mới:");
+//                    newData.inputData(sc);
+//                    business.update(updateId, newData);
                     break;
                 case 4:
                     System.out.print("Nhập ID cần xóa: ");

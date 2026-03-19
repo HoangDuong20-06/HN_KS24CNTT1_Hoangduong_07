@@ -37,21 +37,21 @@ public class WarehouseBusiness {
             System.out.println("Thêm thành công");
         }
     }
-    public void update(String id, Product newData) {
-        Optional<Product> optional = list.stream()
-                .filter(p -> p.getProductId().equals(id))
-                .findFirst();
-        if (optional.isPresent()) {
-            Product p = optional.get();
-            p.setProductName(newData.getProductName());
-            p.setPrice(newData.getPrice());
-            p.setQuantity(newData.getQuantity());
-            p.setCategory(newData.getCategory());
-            System.out.println("Cập nhật thành công");
-        } else {
-            System.out.println("Không tìm thấy sản phẩm");
-        }
-    }
+//    public void update(String id, Product newData) {
+//        Optional<Product> optional = list.stream()
+//                .filter(p -> p.getProductId().equals(id))
+//                .findFirst();
+//        if (optional.isPresent()) {
+//            Product p = optional.get();
+//            p.getProductName(newData.getProductName());
+//            p.setPrice(newData.getPrice());
+//            p.setQuantity(newData.getQuantity());
+//            p.setCategory(newData.getCategory());
+//            System.out.println("Cập nhật thành công");
+//        } else {
+//            System.out.println("Không tìm thấy sản phẩm");
+//        }
+//    }
     public void delete(String id) {
         boolean removed = list.removeIf(p -> p.getProductId().equals(id)); // lambda
         if (removed) {
